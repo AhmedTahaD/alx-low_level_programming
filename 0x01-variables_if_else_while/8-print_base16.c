@@ -1,7 +1,3 @@
-/**
- * print all the numbers of base 16 
- * author : Ahmed Taha
- */
 #include <stdio.h>
 /**
  * main - Entry point
@@ -14,11 +10,13 @@ int main(void)
 	char letter;
 
 	for (n = 0; n < 10; n++)
+	{
 		putchar('0' + n);
-
+	}
 	for (letter = 'a'; letter <= 'f'; letter++)
+	{
 		putchar(letter);
-	
+	}
 	putchar('\n');
 	return (0);
 }

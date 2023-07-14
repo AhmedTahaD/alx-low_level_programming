@@ -1,14 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * This program will assign a random number
- * to the variable neach time it is executed
- * print whether the number stored in the variable n
- * is positive or negative
-*/
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int n;

@@ -1,8 +1,11 @@
 #include "main.h"
-
 /**
- * print alphapets 10x
- */
+*print_alphabet_x10 - prints alphabet letters
+* ten times
+*desc: The function uses loop to operate
+*Return: no return
+*/
+
 void print_alphabet_x10(void)
 {
 	char letter;
@@ -14,6 +17,6 @@ void print_alphabet_x10(void)
 		{
 			_putchar(letter);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }

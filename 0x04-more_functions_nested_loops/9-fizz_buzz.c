@@ -11,17 +11,17 @@ int main(void)
 	number = 0;
 	while (number++ < 100)
 	{
-		if ((number % 3) == 0)
+		if (((number % 3) == 0) && ((number % 5) == 0))
 		{
-			printf("Fizz");
+			printf("FizzBizz");
 		}
 		else if ((number % 5) == 0)
 		{
 			printf("Buzz");
 		}
-		else if (((number % 3) == 0) && ((number % 5) == 0))
+		else if ((number % 3) == 0)
 		{
-			printf("FizzBuzz");
+			printf("Fizz");
 		}
 		else
 		{

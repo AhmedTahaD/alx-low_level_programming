@@ -10,7 +10,7 @@ int main(void)
 
 	while (number++ < 100)
 	{
-		if (((number % 3) == 0) && ((number % 5) == 0))
+		if ((number % 15) == 0)
 		{
 			printf("FizzBizz ");
 		}

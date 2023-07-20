@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  *print_numbers - function print numbers from 0 > 9

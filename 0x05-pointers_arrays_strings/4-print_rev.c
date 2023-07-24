@@ -15,7 +15,7 @@ void print_rev(char *s)
 		s++;
 	}
 	s--;
-	for (reverse =str_len; reverse > 0; reverse--)
+	for (reverse = str_len; reverse > 0; reverse--)
 	{
 		_putchar(*s);
 		s--;

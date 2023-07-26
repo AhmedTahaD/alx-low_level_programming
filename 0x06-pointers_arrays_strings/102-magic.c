@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
- * main -function print integer in magic way
- *  Return: always 0
- */
+
 int main(void)
 {
 	int n;

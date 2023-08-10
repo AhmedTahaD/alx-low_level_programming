@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *memset - fills memory with data
+*_memset - fills memory with data
 *@s: memory area to be filled
 *@c: char to copy
 *@n: number of times to copy c
 *Return: pointer to the memory area s
 */
-char *memset(char *s, char c, unsigned int n)
+char *_memset(char *s, char c, unsigned int n)
 {
 	unsigned int i;
 
@@ -32,6 +32,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(size * nmemb);
 	if (ptr == NULL)
 		return (NULL);
-	memset(ptr, 0, nmemb * size);
+	_memset(ptr, 0, nmemb * size);
 	return (ptr);
 }

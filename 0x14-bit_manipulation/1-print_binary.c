@@ -5,18 +5,21 @@
  */
 void print_binary(unsigned long int n)
 {
-	int temp_num = n;
+	unsigned long int temp_num;
 	int i;
-	char binary_digit[32];
-	int j;
+	int count;
 
-	if (temp_num == 0)
-		_putchar('0');
-	for (i = 0; temp_num > 0; i++)
+	for (i = 63; i >= 0; i--)
 	{
-		binary_digit[i] = temp_num % 2;
-		temp_num = temp_num / 2;
+		temp_num = n >> i;
+		if (temp_num & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+			_putchar('0');
 	}
-	for (j = (i - 1); j >= 0; j--)
-		_putchar(binary_digit[j] + '0');
+	if (n == 0)
+		_putchar('0');
 }

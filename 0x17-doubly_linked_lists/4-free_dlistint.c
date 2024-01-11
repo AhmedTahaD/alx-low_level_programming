@@ -6,12 +6,13 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *tmp;
+	if (head == NULL)
+	return;
 
-	while (head != NULL)
+	while (head->next)
 	{
-		temp = head->next;
-		free(head);
-		head = temp;
+	head = head->next;
+	free(head->prev);
 	}
+	free(head);
 }
